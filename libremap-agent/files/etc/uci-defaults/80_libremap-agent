@@ -60,7 +60,7 @@ if [ ! -f /etc/config/libremap ]; then
 fi
 
 # enable plugins if available
-PLUGINS="wireless system freifunk olsr location altermap babel bmx6"
+PLUGINS="wireless system freifunk olsr location altermap babeld bmx6"
 for p in $PLUGINS; do 
 	if opkg list-installed | grep luci-lib-libremap-$p; then
 		uci set libremap.$p=plugin
