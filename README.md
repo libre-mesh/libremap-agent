@@ -22,7 +22,7 @@ Compilation is straight forward if you know openwrt. If you're not familiar with
 
 ```
 src-git luci git://nbd.name/luci.git
-src-git libremap https://github.com/libremap/libremap-agent-openwrt.git
+src-git libremap https://github.com/libremesh/libremap-agent.git
 ```
 and enable them:
 
