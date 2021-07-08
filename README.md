@@ -20,13 +20,13 @@ Compilation is straight forward if you know openwrt. If you're not familiar with
 1. Clone openwrt repo and change into new directory: `git clone git://git.openwrt.org/openwrt.git && cd openwrt`
 2. Add luci and libremap feeds to feeds.conf:
 
-   ```
-src-git luci git://nbd.name/luci.git
-src-git libremap https://github.com/libremap/libremap-agent-openwrt.git
 ```
-   and enable them:
+src-git luci git://nbd.name/luci.git
+src-git libremap https://github.com/libremesh/libremap-agent.git
+```
+and enable them:
 
-   ```
+```
 ./scripts/feeds update -a
 ./scripts/feeds install -p luci -a
 ./scripts/feeds install -p libremap -a
